@@ -2,8 +2,8 @@ class Flame {
 
     constructor (candle_x, candle_y) {
 
-        this.x = candle_x
-        this.y = candle_y
+        this.x = candle_x - 14
+        this.y = candle_y - 14
 
         this.w = 50
         this.h = 50

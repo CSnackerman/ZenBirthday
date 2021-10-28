@@ -3,8 +3,8 @@ import {Flame} from './flame.js'
 class Candle {
     constructor(x, y) {
         
-        this.w = 15
-        this.h = 50
+        this.w = 25
+        this.h = 75
         this.x = x
         this.y = y
 

@@ -10,14 +10,14 @@ class Cake {
         this.image.src = 'images/cake.png'
 
         this.candles = [
-            new Candle (0, 0)
+                
         ]
     }
 
     draw (context) {
 
         this.candles.forEach ( (candle) => {
-            
+
             candle.draw (context)
         })
 

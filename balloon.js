@@ -6,6 +6,8 @@ class Balloon {
         this.y = y
         this.image = new Image()
         this.image.src = Balloon.images [ Math.floor (Math.random() * Balloon.images.length) ];
+
+        this.floatSpeed = Math.floor (Math.random() * 5) + 1
     }
 
     static images = [
@@ -17,6 +19,10 @@ class Balloon {
 
     draw (context) {
         context.drawImage(this.image, this.x, this.y, this.w, this.h)
+    }
+
+    move () {
+        this.y -= this.floatSpeed
     }
 }
 
